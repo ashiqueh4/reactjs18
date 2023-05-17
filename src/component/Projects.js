@@ -145,13 +145,18 @@ return (
       )
       
     }) }
-
-  
 </thead>
 <tbody>
 
 </tbody>
 </table>
+{ allItem.length===0 && (
+      <div className='norecode'>
+          <h3>
+           No Recode Is Available
+          </h3> 
+         </div>)
+         }
 </div>
 </div>
 

@@ -295,6 +295,10 @@ label.validation-error{
 .openlink {
   text-decoration: none;
 }
+.norecode {
+  margin-top: 35px;
+  text-align: center;
+}
 @media screen and (max-width: 450px) {
   .confirm {
     width: 300px;
