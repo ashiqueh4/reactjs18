@@ -2,12 +2,34 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Error from './component/Error';
+import ProtectedRoute from './component/ProtectedRoute';
+import Projects from './component/Projects';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    errorElement: <Error />
+  },
+  {
+    path: "/projects",
+    element:<ProtectedRoute >
+     <Projects></Projects>
+     </ProtectedRoute>,
+    errorElement: <Error />,
+  }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <RouterProvider router={router} />
   </React.StrictMode>
 );
 
