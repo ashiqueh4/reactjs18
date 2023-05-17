@@ -92,12 +92,12 @@ td, th{
 tr:nth-child(even),table.list thead>tr{
   background-color: #e7e8e3;
 }
-input[type=text], input[type=number],input[type=url] {
-  /* width: 100%; */
+.projectdeatils input[type=text],.projectdeatils input[type=number],.projectdeatils input[type=url] {
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0px;
   display: inline-block;
-  /* border: 1px solid #ccc; */
+  border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
 }
