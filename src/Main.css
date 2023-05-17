@@ -317,5 +317,8 @@ label.validation-error{
   padding: 10px;
   flex-direction: column;
 }
+form.loginForm {
+  flex-direction: column;
+}
 }
 
